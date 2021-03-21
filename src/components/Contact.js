@@ -11,15 +11,23 @@ export default function Contact() {
 
     return (
         <Fragment>
+            <section className='contact'>
+            <div className="contactTitle">
+                <h1>Got a question?</h1>
+                <h4>Feel free to ask me anytime</h4>
+            </div>
+            <div className='contactRow row'>
             {contactData.map((el,i)=>{
                     return (                        
                         <div key={i} className="card col-3">
                             {el.icon}
                             <h2>{el.titre}</h2>
-                            <h5>{el.projects}</h5>
+                            <h5>{el.info}</h5>
                         </div>
                     )
                 })}
+                </div>
+            </section>
         </Fragment>
     )
 }

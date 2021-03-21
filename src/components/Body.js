@@ -35,7 +35,7 @@ const Body = () => {
         <body>
             <section className="sect1">
                 <div data-aos="fade-right" id="divImgPersonne">
-                    <span>ALEX GASPAR.</span>
+                    <span>ALEX GASPAR<span className='poin'>.</span></span>
                 </div>
             </section>
             <section className='sect2' id="about">
