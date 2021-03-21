@@ -1,0 +1,74 @@
+header
+    display: flex !important
+    justify-content: space-between
+    padding: 100px
+    align-items: center
+    background-color: #212F45 !important
+    .init
+        font-family: 'MontserratBold'
+        font-size: 50px
+        color: white
+        .poin
+            color: #006466
+    .links
+        font-size: 20px
+        font-family: 'Montserrat'
+        a
+            margin: 0 20px
+            color: white
+            letter-spacing: 0.15em
+            display: inline-block
+            padding: 15px 20px
+            position: relative
+            text-decoration: none
+            &:after
+                background: none repeat scroll 0 0 transparent
+                bottom: 0
+                content: ""
+                display: block
+                height: 2px
+                left: 50%
+                position: absolute
+                background: #fff
+                transition: width 0.3s ease 0s, left 0.3s ease 0s
+                width: 0
+            &:hover:after
+                width: 100%
+                left: 0
+
+.active
+    color: #20c997 !important
+
+.hamburger
+    display: none
+    background-color: transparent
+    padding: 5px 10px
+    border: solid 1px #20c997
+    color: #20c997
+    outline: none
+
+@media screen and ( max-width: 1030px )
+    .hamburger
+        display: block
+        position: absolute
+        top: 100px
+        right: 200px
+    .links
+        order: 3
+        position: absolute !important
+        top: 60px
+        right: 20px
+        background-color: #fff
+        border-radius: 2px
+        border-top: 0.8px solid #20c997
+        padding-right: 25px
+        display: flex
+        flex-direction: column
+        align-items: center
+        z-index: 2
+        transition: 0.3s
+        a
+            color: #292222
+                
+            
+
