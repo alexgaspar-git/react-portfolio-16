@@ -1,0 +1,22 @@
+.divGalerie
+    .galerie
+        display: flex
+        justify-content: center
+        margin: 40px 0
+        &:hover img
+            filter: brightness(50%)
+            transform: scale(1.2)
+        &:hover span
+            display: block    
+        img
+            height: 200px
+            box-shadow: 3px 3px 25px 1px #242121
+            position: relative       
+            transition-duration: 0.5s
+        span
+            position: absolute
+            top: 35%
+            font-size: 30px
+            font-family: 'MontserratBold'
+            color: white
+            display: none

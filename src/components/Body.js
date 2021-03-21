@@ -23,6 +23,7 @@ const Body = () => {
                 </div>
             </section>
             <section className='sect2'>
+                <h2>My Skills</h2>
                 <div className="divCards">
                     {data.map((el,i)=>{
                             return (                        
@@ -36,6 +37,7 @@ const Body = () => {
                 </div>
             </section>
             <section className='sect3'>
+                <h2>My Portfolio</h2>
                 <Galerie/>
             </section>
         </body>

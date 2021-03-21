@@ -48,13 +48,13 @@ export default function Header() {
                     <NavLink to='/' exact>
                         Home
                     </NavLink>
-                    <Link to='/' exact>
+                    <Link to='/#about' exact>
                         About me
                     </Link>
-                    <Link to='/' exact>
+                    <Link to='/#portfolio' exact>
                         Portfolio
                     </Link>
-                    <Link to='/' exact>
+                    <Link to='/contact' exact>
                         Contact
                     </Link>
                 </div>
