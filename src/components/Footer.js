@@ -25,7 +25,7 @@ export default function Footerr() {
             <p>We handpicked the most interesting content for you. No spam. It takes one click to unsubscribe. Give it a try!</p>
             <div className='footInput'>
               <input type="text"/>
-              <button type="button" class="btn btn-light">Light</button>
+              <button type="button" class="btn btn-light">Send</button>
             </div>
           </div>
         </div>
