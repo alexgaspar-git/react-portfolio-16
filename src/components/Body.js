@@ -1,6 +1,13 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import Aos from "aos"
+import "aos/dist/aos.css"
+import Galerie from './Galerie'
 
-export default function Body() {
+const Body = () => {
+    useEffect (() => {
+        console.log("changement");
+        Aos.init({duration: 1500});
+    }, []);
 
     const data = [
         {logo: <i class="fab fa-html5"></i>, titre: 'HTML', projects: '165 projects', baral1:'10%', baral2:'luck'},
@@ -11,7 +18,9 @@ export default function Body() {
     return (
         <body>
             <section className="sect1">
-                <span>ALEX GASPAR.</span>
+                <div data-aos="fade-right" id="divImgPersonne">
+                    <span>ALEX GASPAR.</span>
+                </div>
             </section>
             <section className='sect2'>
                 <div className="divCards">
@@ -27,7 +36,10 @@ export default function Body() {
                 </div>
             </section>
             <section className='sect3'>
+                <Galerie/>
             </section>
         </body>
     )
 }
+
+export default Body
