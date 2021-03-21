@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import Header from '../components/Header'
+import Body from '../components/Body'
+import Footer from '../components/Footer'
+
 
 export default function Contact() {
     return (
-        <div>
-            
-        </div>
+        <Fragment>
+            <Header/>
+            <Footer/>
+        </Fragment>
     )
 }

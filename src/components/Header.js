@@ -54,9 +54,9 @@ export default function Header() {
                     <Link to='/#portfolio' exact>
                         Portfolio
                     </Link>
-                    <Link to='/contact' exact>
+                    <NavLink to='/contact' exact>
                         Contact
-                    </Link>
+                    </NavLink>
                 </div>
             )}
         </header>
