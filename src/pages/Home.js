@@ -1,14 +1,14 @@
 import React, { Fragment } from 'react'
 import Header from '../components/Header'
 import Body from '../components/Body'
-import Footerr from '../components/Footerr'
+import Footer from '../components/Footer'
 
 export default function Home() {
     return (
         <Fragment>
             <Header/>
             <Body/>
-            <Footerr/>
+            <Footer/>
         </Fragment>
     )
 }
